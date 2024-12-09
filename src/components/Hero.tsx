@@ -17,7 +17,7 @@ const integrationLogos = [
   },
   {
     name: "X (Twitter)",
-    src: "https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg",
   },
   {
     name: "Slack",
