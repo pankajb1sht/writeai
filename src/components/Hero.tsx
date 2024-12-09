@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Chrome, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 import {
   Carousel,
   CarouselContent,
@@ -17,7 +18,7 @@ const integrationLogos = [
   },
   {
     name: "X (Twitter)",
-    src: "https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg",
   },
   {
     name: "Slack",
@@ -50,10 +51,12 @@ export const Hero = () => {
             compelling content, and instant translations - all in your browser.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button className="bg-primary hover:bg-primary-dark text-white px-8 py-6 text-lg group">
-              Try for Free
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link to="/signup">
+              <Button className="bg-primary hover:bg-primary-dark text-white px-8 py-6 text-lg group">
+                Try for Free
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <Chrome className="w-6 h-6 text-secondary-light" />
